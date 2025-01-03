@@ -1,13 +1,11 @@
 ## Approach
 
-I focused on designing each API endpoint individually, iterating on the functionality as needed. This method allowed me to efficiently develop and adapt each endpoint by building on existing structures.
+I tried to replicate the structure shown in the Workshop 8 demos, which took a while since I had to figure out how everything worked and fit together. For example, I had to learn how middleware handles authentication and spent some time reading up on Supabase ORM to get it working properly.
 
 ## Takeaways
 
-I learned the importance of hiding sensitive variables in a .env file. Moving forward, I’ll ensure to apply this practice across all my projects for better security and maintainability.
+This project taught me a lot about sticking with it when working on big, complicated codebases. I realized I actually enjoy that kind of challenge, even though it can be frustrating. It reminded me of the CS 339 labs where we were handed unfinished codebases (with zero documentation) and told to just write the functions. I definitely struggled with those labs, but I also liked them and want to keep improving at handling big projects like this—especially through DISC.
 
 ## Challenges
 
-One challenge was standardizing error codes across the application, which required careful planning and implementation.
-
-I also had to create a frontend from scratch, as I only discovered DISC through an email about the Discover program. The primary difficulty in building the frontend was deciding which state variables to use, leading to several changes in implementation before finding the right approach. Additionally, I learned that .env variables for the frontend must start with NEXT_PUBLIC_, which took some time to figure out.
+One big issue I ran into was my frontend not connecting to my backend. After a lot of debugging, I figured out it was because I forgot to set up CORS. Another challenge was understanding how the whole codebase fit together—from server.js to app.js and how that connects to authRoutes.js and userRoutes.js, then to their controllers. Early on, if something broke, I had to dig through a bunch of files to figure out what was going on. 
